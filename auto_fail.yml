@@ -1,0 +1,14 @@
+name: Fail Action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  fail:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Fail Step
+      run: exit 1
