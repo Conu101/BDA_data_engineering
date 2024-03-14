@@ -1,0 +1,14 @@
+name: Hello World
+
+on:
+  push:
+    branches:
+      - main  # Adjust this to your main branch name
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Print Hello World
+      run: echo "Hello, world! This is an exercise to test workflow creation during the BDA course."
